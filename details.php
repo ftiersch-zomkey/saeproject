@@ -5,7 +5,7 @@ require_once("config/functions.php");
 
 
 $news_result = mysqli_query($conn, "SELECT * FROM news WHERE id=" .$_GET['id']);
-$test = mysqli_fetch_assoc($news_result);
+$output = mysqli_fetch_assoc($news_result);
 
 ?>
 
@@ -28,10 +28,11 @@ $test = mysqli_fetch_assoc($news_result);
     <h1>Details - News</h1>
 
     <div class="main_content">
-      <h2><?php echo $test['title']; ?></h2>
-      <p>
-        <?php echo $test['content']; ?>
+      <h2><?php echo $output['title']; ?></h2>
+      <p class="text">
+        <?php echo $output['content']; ?>
       </p>
+
     </div>
 
     <div class="side_container">
