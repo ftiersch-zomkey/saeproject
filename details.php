@@ -4,10 +4,10 @@ require_once("config/mysql.php");
 require_once("config/functions.php");
 
 
-$news_result = mysqli_query($conn, "SELECT content FROM news");
-mysqli_fetch_assoc($news_result);
+$news_result = mysqli_query($conn, "SELECT * FROM news");
+$test = mysqli_fetch_assoc($news_result);
 
-
+print_r($test);
 
 ?>
 
