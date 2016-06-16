@@ -1,5 +1,11 @@
 <?php
 
+function niceTitle($title){
+  $title = strtolower($title);
+  $title = preg_replace('/[^A-Za-z0-9\_\-]/',"_", $title);
+  return $title;
+}
+
 function getNews($page, $limit){
   // get the Connection & table
   global $conn;

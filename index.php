@@ -31,19 +31,24 @@ mysqli_close($conn);
 
         // REPLACE PLACEHOLDER
         foreach($entry as $key => $value){
-          // CHANGE TYPE OF DATE
-          if($key == "published"){
-            $date = new DateTime($value);
-            $value = $date->format('H:i d.m.Y');
-          }
-          // REPLACE PLACEHOLDER :)
           $html = str_replace("{".$key."}", $value, $html);
         }
 
-        // PREVIEW AND NICE TITLE IS SPECIAL
+        // PREVIEW
         $preview = $entry['content'];
         if(strlen($preview) > $previewLength){$preview = substr($preview, 0, $previewLength-3)."...";}
         $html = str_replace("{preview}", $preview, $html);
+
+        // PUBLISHED_GERMAN
+        $date = new DateTime($entry['published']);
+        $published = $date->format('H:i d.m.Y');
+        $html = str_replace("{published}", $published, $html);
+
+        //NICE_TITLE
+        $nice_title = niceTitle($entry['title']);
+        $html = str_replace("{nice_title}", $nice_title, $html);
+
+
 
         // Echo out
         echo $html;
