@@ -5,7 +5,7 @@ require_once("config/functions.php");
 
 
 $news_result = mysqli_query($conn, "SELECT * FROM news");
-// mysqli_fetch_assoc($news_result);
+mysqli_fetch_assoc($news_result);
 
 ?>
 
@@ -28,7 +28,7 @@ $news_result = mysqli_query($conn, "SELECT * FROM news");
     <h1>Details - News</h1>
 
     <div class="main_content">
-      <?php echo $news_result; ?>
+      <?php // echo $news_result; ?>
     </div>
 
     <div class="side_container">
