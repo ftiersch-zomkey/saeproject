@@ -4,7 +4,7 @@ function getNews($page, $limit){
   // get the Connection & table
   global $conn;
   global $tables;
-  $table = $tables['comments'];
+  $table = $tables['news'];
 
   // TODO: Security :P
 
