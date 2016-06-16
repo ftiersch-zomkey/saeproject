@@ -41,7 +41,8 @@ mysqli_close($conn);
 
         // Echo out
         echo $html;
-      }else{
+      }
+    }else{
       echo "<h2>No News!<h2>";
     }
     ?>
