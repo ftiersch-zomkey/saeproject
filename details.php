@@ -32,6 +32,12 @@ $output = mysqli_fetch_assoc($news_result);
       <p class="text">
         <?php echo $output['content']; ?>
       </p>
+      <p class="author">
+        <?php echo $output['author']; ?>
+      </p>
+      <p class="timestamp">
+        <?php echo $output['published']; ?>
+      </p>
 
     </div>
 
