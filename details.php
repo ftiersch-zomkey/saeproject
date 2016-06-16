@@ -36,10 +36,9 @@ mysqli_fetch_assoc($news_result);
     </div>
 
     <div class="comments">
-
+      <?php include("comments.php"); ?>
     </div>
 
-<?php include("comments.php"); ?
   </body>
   <footer>
     <a href="#">Impressum</a>
