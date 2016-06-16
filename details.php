@@ -1,6 +1,5 @@
 <?php
 
-include_once("comments.php");
 require_once("config/mysql.php");
 require_once("config/functions.php");
 
@@ -40,6 +39,7 @@ mysqli_fetch_assoc($news_result);
 
     </div>
 
+<?php include("comments.php"); ?
   </body>
   <footer>
     <a href="#">Impressum</a>
