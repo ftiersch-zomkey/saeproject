@@ -24,11 +24,10 @@ body{
 
 .pagination li{
   display:inline-block;
-  height:20px;
-  width:20px;
+
   text-align:center;
 
-  border-radius:50%;
+  border-radius:4.5px;
   transition: all ease-in .2s;
   background-color: rgb(226, 226, 226);
   margin-right:10px;
