@@ -1,0 +1,12 @@
+.main_content {
+        margin: 0 auto;
+        width: 900px;
+        height: 800px;
+        background-color: lightgray;
+        float: left;
+      }
+
+      .side_container {
+        width: 200px;
+        height: 800px;
+      }
