@@ -1,7 +1,12 @@
 <?php
 
-include_once("comments.php", "details.css");
+include_once("comments.php");
+require_once("config/mysql.php");
+require_once("config/functions.php");
 
+
+$news_result = mysqli_query("SELECT * FROM news WHERE id = ." .$_GET['id'] .);
+mysqli
 
 ?>
 
@@ -11,7 +16,7 @@ include_once("comments.php", "details.css");
   <head>
     <meta charset="utf-8">
     <title>Details</title>
-    <!--  <link rel="stylesheet" href="details.css" media="screen" charset="utf-8">  -->
+    <link rel="stylesheet" href="details.css" media="screen" charset="utf-8">
 
 
   </head>
