@@ -27,10 +27,11 @@ body{
   padding: 5px;
   border-radius: 2px;
   animation: ease-in .2s;
+  background-color: rgb(226, 226, 226);
 }
 
-.pagination li{
-  background-color: rgb(226, 226, 226);
+.pagination li:hover{
+  background-color: rgb(158, 158, 158);
 }
 
 .pagination .active{
