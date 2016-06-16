@@ -4,8 +4,7 @@
 
 $conncomments = mysqli_query($conn, "SELECT * FROM comments");
 
-while($row = mysql_fetch_assoc($conncomments))
-        echo $row;
-
+while($comment = mysqli_fetch_assoc($conncomments))
+        echo $comment["id"];
 ?>
 </div> <!-- kommentar_formular -->
