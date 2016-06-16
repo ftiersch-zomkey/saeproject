@@ -18,7 +18,8 @@ nav a {
       }
 
 .main_content h2 {
-  margin-left: 100px;
+  margin-left: 250px;
+  margin-bottom: 50px;
 }
 
 .side_container {
@@ -31,6 +32,6 @@ nav a {
 }
 
 .main_content p {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
