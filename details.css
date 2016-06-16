@@ -26,12 +26,6 @@ nav a {
     float: left;
 }
 
-.side_container {
-    width: 200px;
-    height: 800px;
-    background-color: red;
-}
-
 .main_content h2 {
   margin-left: 250px;
   margin-bottom: 50px;
