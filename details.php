@@ -30,7 +30,7 @@ print_r($test);
     <h1>Details - News</h1>
 
     <div class="main_content">
-      <?php echo $test['title']; ?>
+      <h2><?php echo $test['title']; ?></h2>
     </div>
 
     <div class="side_container">
