@@ -8,17 +8,6 @@ h1 {
   margin-top: 50px;
 }
 
-nav {
-  margin-top: 50px;
-}
-
-nav a {
-  margin-left: 200px;
-  margin-top: 50px;
-  text-decoration: none;
-  color: black;
-}
-
 .main_content {
     width: 900px;
     height: 400px;
@@ -52,16 +41,4 @@ nav a {
 .comments {
   margin-top: 50px;
   width: 900px;
-}
-
-
-
-footer {
-  margin-top: 100px;
-}
-
-footer a {
-  text-decoration: none;
-  color: black;
-  margin-left: 200px;
 }

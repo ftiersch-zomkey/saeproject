@@ -1,5 +1,5 @@
 <?php
-
+require_once("header.php");
 require_once("config/mysql.php");
 require_once("config/functions.php");
 
@@ -20,11 +20,6 @@ $output = mysqli_fetch_assoc($news_result);
 
   </head>
   <body>
-    <nav>
-      <a href="index.php">Home</a>
-      <a href="#">Politics</a>
-      <a href="#">Sports</a>
-    </nav>
     <h1>Details - News</h1>
 
     <div class="main_content">
@@ -46,9 +41,8 @@ $output = mysqli_fetch_assoc($news_result);
     </div>
 
   </body>
-  <footer>
-    <a href="#">Impressum</a>
-    <a href="http://facebook.com" target="_blank">Facebook</a>
-    <a href="http://twitter.com" target="_blank">Twitter</a>
-  </footer>
 </html>
+
+<?php
+require_once("footer.php");
+?>
