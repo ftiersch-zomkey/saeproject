@@ -50,3 +50,14 @@ nav a {
 .comments {
   margin-top: 50px;
 }
+
+
+
+footer {
+  margin-top: 100px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
