@@ -40,7 +40,7 @@ mysqli_close($conn);
           $html = str_replace("{".$key."}", $value, $html);
         }
 
-        // PREVIEW IS SPECIAL
+        // PREVIEW AND NICE TITLE IS SPECIAL
         $preview = $entry['content'];
         if(strlen($preview) > $previewLength){$preview = substr($preview, 0, $previewLength-3)."...";}
         $html = str_replace("{preview}", $preview, $html);
