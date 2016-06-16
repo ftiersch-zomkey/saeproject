@@ -1,6 +1,6 @@
 <?php
 $tables['news'] = "news";
-$tables['comments'] = "comments"
+$tables['comments'] = "comments";
 
 $conn = mysqli_connect("localhost", "sae", "sae", "sae");
 if (mysqli_connect_error()) {
