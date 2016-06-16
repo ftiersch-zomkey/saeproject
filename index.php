@@ -2,7 +2,43 @@
 require_once("config/mysql.php");
 require_once("config/functions.php");
 
-echo "Working!";
+$news_entry_sk = file_get_contents('skeleton/news_entry.html');
+
+$previewLength = 200; // Preview char length
+$page = isset($_GET['p']) ? $_GET['p'] : 0;
+$limit = isset($_GET['l']) ? $_GET['l'] : 5;
+
+
+$news = getNews($page, $limit);
 
 mysqli_close($conn);
 ?>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>News :)</title>
+  </head>
+  <body>
+    <?php
+        foreach($news as $entry){
+          $html = $news_entry_sk;
+
+          // REPLACE PLACEHOLDER
+          foreach($entry as $key => $value){
+            str_replace("{".$key."}", $value, $html);
+          }
+
+          // PREVIEW IS SPECIAL
+          $preview = $entry['content'];
+          if(strlen($preview) > $previewLength){$preview = substr($preview, 0, $previewLength-3)."...";}
+          str_replace("{preview}", $preview, $html);
+
+          // Echo out
+          echo $html;
+        }
+     ?>
+  </body>
+</html>
