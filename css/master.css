@@ -24,7 +24,7 @@ body{
 
 .pagination li{
   display:inline-block;
-  padding: 10px 5px;
+  padding: 5px;
   border-radius:50%;
   transition: all ease-in .2s;
   background-color: rgb(226, 226, 226);
