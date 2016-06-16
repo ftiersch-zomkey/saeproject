@@ -13,6 +13,7 @@ body{
  
  .title,.author,.published{
    margin-bottom:10px;
+   border-bottom:10px solid grey;
  }
 
 .wrapper:hover{
