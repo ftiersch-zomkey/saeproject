@@ -24,6 +24,7 @@ body{
 
 .pagination li{
   display:inline-block;
+  line-height:100%;
 
   text-align:center;
 
