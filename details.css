@@ -40,6 +40,7 @@ nav a {
 .main_content p.author {
   margin-left: 80px;
   margin-right: 80px;
+  float: left;
 }
 
 .main_content p.timestamp {
