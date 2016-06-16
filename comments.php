@@ -5,7 +5,7 @@
 $conncomments = mysqli_query($conn, "SELECT * FROM comments");
 
 while($comment = mysqli_fetch_assoc($conncomments))
-        echo $comment["id"];
+        echo $comment["author"];
  ?>
 <p>
   test
