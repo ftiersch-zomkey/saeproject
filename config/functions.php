@@ -34,10 +34,13 @@ function countNews(){
   $res = $conn->query("SELECT count(`id`) FROM `$table`");
 
   // error
-  if(!$res){return false;}
+  if(!$res || $res->num_rows == 0){return false;}
+
+  // get Row
+  $row = $res->fetch_row();
 
   // return
-  return $res[0];
+  return $row[0];
 }
 
 function calcPagination($page, $limit, $newsCount, $pages_before = 4, $pages_after = 4){
