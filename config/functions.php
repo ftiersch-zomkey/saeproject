@@ -24,4 +24,32 @@ function getNews($page, $limit){
   return $news;
 }
 
+function countNews(){
+  // get the Connection & table
+  global $conn;
+  global $tables;
+  $table = $tables['news'];
+
+  // Select
+  $res = $conn->query("SELECT count(`id`) FROM `$table`");
+
+  // error
+  if(!$res){return false;}
+
+  // return
+  return $res[0];
+}
+
+function calcPagination($page, $limit, $newsCount, $pages_before = 4, $pages_after = 4){
+
+  for($i=($page-$pages_before);$i < ($page + $pages_after);$i++){
+    if($i > 0){$pages_after++;}
+    if($i > 0 && $i < ceil($newsCount / $limit)){
+      $pages[] = $i
+    }
+  }
+
+  return $pages;
+}
+
  ?>

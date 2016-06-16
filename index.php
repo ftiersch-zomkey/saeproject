@@ -8,7 +8,7 @@ $previewLength = 200; // Preview char length
 $page = isset($_GET['p']) ? $_GET['p'] : 1;
 $limit = isset($_GET['l']) ? $_GET['l'] : 5;
 
-
+$pagination = calcPagination($page,$limit,countNews());
 $news = getNews($page, $limit);
 
 mysqli_close($conn);
@@ -52,8 +52,13 @@ mysqli_close($conn);
       echo "<h2>No News!<h2>";
     }
     ?>
-    <!-- kurz zum testen -->
-       <a href="details.php">Details</a>
-       <!-- Kann später dann wieder raus -->
+
+    <ul>
+    <?php
+      foreach($pagination as $page){
+        echo "<li><a href=\"index.php?p=$page\">$page</a></li>";
+      }
+     ?>
+   </ul>
   </body>
 </html>
