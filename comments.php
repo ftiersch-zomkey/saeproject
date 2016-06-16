@@ -12,6 +12,7 @@ $comment = mysqli_fetch_assoc($conncomments);
   <label class=label1>Kommentar</label> </br>
   <input type="text" name="comment">
   <input type="submit" name="commentsend" value="Comment">
+<?php while($comment = mysqli_fetch_assoc($conncomments)){ ?>
 
 <div id="Kommentar">
   <p class="name"><?php echo $comment["author"]; ?></p>
@@ -19,7 +20,7 @@ $comment = mysqli_fetch_assoc($conncomments);
   <div id=clear></div>
   <p class="Kommentarclass"><?php echo $comment['content']; ?></p>
 </div>
-
+<?php } ?>
 <style media="screen">
   #Kommentar {
     background-color: lightgrey;
