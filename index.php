@@ -52,8 +52,6 @@ mysqli_close($conn);
       echo "<h2>No News!<h2>";
     }
     ?>
-    <!-- kurz zum testen -->
-       <a href="details.php">Details</a>
-       <!-- Kann später dann wieder raus -->
+    
   </body>
 </html>
