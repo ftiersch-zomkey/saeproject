@@ -32,8 +32,8 @@ body{
   cursor: pointer;
 }
 
-.pagination li:hover, .pagination li+.active{
-  background-color: rgb(158, 158, 158);
+.pagination li:hover, .pagination .active{
+  background-color: rgb(158, 158, 158) !important;
 }
 
 .pagination li a{
