@@ -5,7 +5,7 @@ require_once("config/functions.php");
 $news_entry_sk = file_get_contents('skeleton/news_entry.html');
 
 $previewLength = 200; // Preview char length
-$page = isset($_GET['p']) ? $_GET['p'] : 0;
+$page = isset($_GET['p']) ? $_GET['p'] : 1;
 $limit = isset($_GET['l']) ? $_GET['l'] : 5;
 
 
