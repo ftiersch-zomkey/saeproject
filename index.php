@@ -23,6 +23,7 @@ mysqli_close($conn);
   <link rel="stylesheet" href="/css/master.css" charset="utf-8">
 </head>
 <body>
+  <?php require_once('header.php'); ?>
   <div class="wrapper">
     <?php
     if($news){
@@ -68,5 +69,6 @@ mysqli_close($conn);
       }
       ?>
     </ul>
+      <?php require_once('footer.php'); ?>
   </body>
   </html>
