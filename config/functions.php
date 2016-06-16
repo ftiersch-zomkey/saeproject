@@ -19,7 +19,7 @@ function getNews($page, $limit){
   }
 
   // return
-  return $news[];
+  return $news;
 }
 
  ?>
