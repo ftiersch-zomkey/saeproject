@@ -24,11 +24,12 @@ body{
 
 .pagination li{
   display:inline-block;
-  padding: 10px 5px;
+  padding: 10px 15px;
   border-radius: 2px;
   transition: all ease-in .2s;
   background-color: rgb(226, 226, 226);
   margin-right:10px;
+  cursor: pointer;
 }
 
 .pagination li:hover, .pagination li+.active{
