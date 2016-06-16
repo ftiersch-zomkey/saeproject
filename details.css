@@ -15,7 +15,7 @@ nav a {
     height: 800px;
     background-color: lightgray;
     float: left;
-      }
+}
 
 .main_content h2 {
   margin-left: 250px;
@@ -25,21 +25,24 @@ nav a {
 .side_container {
     width: 200px;
     height: 800px;
-      }
+    background-color: red;
+}
 
 .comments {
   margin-top: 50px;
 }
 
-.main_content .text {
+.main_content p.text {
   margin-left: 80px;
   margin-right: 80px;
 }
 
 .main_content p.author {
-
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .main_content p.timestamp {
-
+  margin-left: 80px;
+  margin-right: 80px;
 }
