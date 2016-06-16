@@ -29,7 +29,7 @@ $test = mysqli_fetch_assoc($news_result);
 
     <div class="main_content">
       <h2><?php echo $test['title']; ?></h2>
-      <p class="main_text">
+      <p>
         <?php echo $test['content']; ?>
       </p>
     </div>
