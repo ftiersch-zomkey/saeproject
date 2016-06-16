@@ -29,13 +29,13 @@ mysqli_close($conn);
 
           // REPLACE PLACEHOLDER
           foreach($entry as $key => $value){
-            str_replace("{".$key."}", $value, $html);
+            $html = str_replace("{".$key."}", $value, $html);
           }
 
           // PREVIEW IS SPECIAL
           $preview = $entry['content'];
           if(strlen($preview) > $previewLength){$preview = substr($preview, 0, $previewLength-3)."...";}
-          str_replace("{preview}", $preview, $html);
+          $html = str_replace("{preview}", $preview, $html);
 
           // Echo out
           echo $html;

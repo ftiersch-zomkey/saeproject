@@ -12,9 +12,6 @@ function getNews($page, $limit){
   $skip = --$page * $limit;
   $res = $conn->query("SELECT * FROM `$table` ORDER BY `published` DESC LIMIT $skip,$limit");
 
-  echo("SELECT * FROM `$table` ORDER BY `published` DESC LIMIT $skip,$limit");
-  echo($conn->error);
-
   // error or no news anymore
   if(!$res || $res->num_rows == 0){return false;}
 
