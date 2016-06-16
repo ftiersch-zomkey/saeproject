@@ -7,9 +7,6 @@ $conncomments = mysqli_query($conn, "SELECT * FROM comments WHERE news_id = ". $
 $comment = mysqli_fetch_assoc($conncomments);
 
  ?>
-<p>
-  test
-</p>
 
 <form class="kommentare" action="details.php" method="post">
   <label class=label1>Kommentar</label> </br>
