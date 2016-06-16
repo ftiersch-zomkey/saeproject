@@ -19,5 +19,20 @@ body{
 
 
 .pagination {
-  
+  list-style:none;
+}
+
+.pagination li{
+  display:inline-block;
+  padding: 5px;
+  border-radius: 2px;
+  animation: ease-in .2s;
+}
+
+.pagination li{
+  background-color: rgb(226, 226, 226);
+}
+
+.pagination .active{
+  background-color: rgb(226, 226, 226);
 }
