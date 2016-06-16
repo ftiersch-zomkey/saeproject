@@ -7,8 +7,6 @@ require_once("config/functions.php");
 $news_result = mysqli_query($conn, "SELECT * FROM news WHERE id=" .$_GET['id']);
 $test = mysqli_fetch_assoc($news_result);
 
-print_r($test);
-
 ?>
 
 
@@ -31,7 +29,7 @@ print_r($test);
 
     <div class="main_content">
       <h2><?php echo $test['title']; ?></h2>
-      <p>
+      <p class="main_text">
         <?php echo $test['content']; ?>
       </p>
     </div>
