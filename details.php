@@ -7,6 +7,12 @@ require_once("config/functions.php");
 $news_result = mysqli_query($conn, "SELECT * FROM news");
 mysqli_fetch_assoc($news_result);
 
+$news = $news_result['content'];
+
+foreach ($news as $news_result) {
+  echo "ich bin ein News Eintrag aus der Datenbank";
+}
+
 ?>
 
 
