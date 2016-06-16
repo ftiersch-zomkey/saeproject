@@ -23,8 +23,8 @@ mysqli_close($conn);
   <link rel="stylesheet" href="/css/master.css" charset="utf-8">
 </head>
 <body>
-  <?php require_once('header.php'); ?>
   <div class="wrapper">
+    <?php require_once('header.php'); ?>
     <?php
     if($news){
       foreach($news as $entry){
