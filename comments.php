@@ -4,16 +4,46 @@
 
 $conncomments = mysqli_query($conn, "SELECT * FROM comments WHERE news_id = ". $_GET["id"]);
 
-
  ?>
-<p>
-  test
-</p>
+
 
 <form class="kommentare" action="details.php" method="post">
-  <label class=label1>Kommentar</label> </br>
-  <input type="text" name="comment">
-  <input type="submit" name="commentsend" value="Comment">
+  <div class=label1>Kommentar Ersetllen</div> </br>
+  <input class="inputtext" type="text" name="comment">
+  <input class="commentbutton" type="submit" name="commentsend" value="Comment">
+</form>
+<style media="screen">
+
+  .label1 {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  form {
+    background-color: lightgrey;
+    margin-top: 30px;
+    height: 200px;
+    width: 500px;
+  }
+
+  .inputtext {
+    padding: 10px;
+    margin-left: 30px;
+    background-color: white;
+    width: 400px;
+    height: 100px;
+  }
+
+  .commentbutton {
+    margin-left: 360px;
+    margin-top: 10px;
+  }
+
+</style>
+
+
+
+
 
 <?php while($comment = mysqli_fetch_assoc($conncomments)){ ?>
 
@@ -27,7 +57,7 @@ $conncomments = mysqli_query($conn, "SELECT * FROM comments WHERE news_id = ". $
 <style media="screen">
   #Kommentar {
     background-color: lightgrey;
-    margin-top: 10px;
+    margin-top: 30px;
     height: 200px;
     width: 500px;
   }
@@ -51,12 +81,11 @@ $conncomments = mysqli_query($conn, "SELECT * FROM comments WHERE news_id = ". $
     margin-left: 30px;
     background-color: white;
     width: 400px;
-    height: 100px
+    height: 100px;
 
   }
 
 
 </style>
 
-</form>
 </div> <!-- kommentar_formular -->
