@@ -46,7 +46,7 @@ function countNews(){
 function calcPagination($page, $limit, $newsCount, $pages_before = 4, $pages_after = 4){
 
   for($i=($page-$pages_before);$i < ($page + $pages_after);$i++){
-    if($i > 0){$pages_after++;}
+    if($i < 0){$pages_after++;}
     if($i > 0 && $i < ceil($newsCount / $limit)){
       $pages[] = $i;
     }
