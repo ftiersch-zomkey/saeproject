@@ -10,15 +10,7 @@ body{
   padding: 15px 20px;
   transition:all 0.4s ease-in-out;
 }
-.head{
-max-width:80%;
-padding:20px;
-}
-.title,.publish,.author{
-  float:left;
-  width:30%;
-  margin-right:10px;
-}
+
 
 .wrapper:hover{
   padding:5px;
