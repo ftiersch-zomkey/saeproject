@@ -41,22 +41,12 @@ mysqli_close($conn);
 
         // Echo out
         echo $html;
-      }
-<<<<<<< HEAD
-     ?>
-
-
-       <!-- kurz zum testen -->
-       <a href="details.php">Details</a>
-       <!-- Kann später dann wieder raus -->
-  </body>
-=======
-    }else{
+      }else{
       echo "<h2>No News!<h2>";
     }
     ?>
-
-  </div>
-</body>
->>>>>>> origin/master
+    <!-- kurz zum testen -->
+       <a href="details.php">Details</a>
+       <!-- Kann später dann wieder raus -->
+  </body>
 </html>
