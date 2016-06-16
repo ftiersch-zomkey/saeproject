@@ -28,6 +28,7 @@ nav a {
 
 .main_content h2 {
   margin-left: 250px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -48,6 +49,7 @@ nav a {
 
 .comments {
   margin-top: 50px;
+  width: 900px;
 }
 
 
