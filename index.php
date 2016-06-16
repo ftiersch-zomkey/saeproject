@@ -23,6 +23,7 @@ mysqli_close($conn);
   </head>
   <body>
     <?php
+        if($news){
         foreach($news as $entry){
           $html = $news_entry_sk;
 
@@ -39,6 +40,9 @@ mysqli_close($conn);
           // Echo out
           echo $html;
         }
+      }else{
+        echo "<h2>No News!<h2>";
+      }
      ?>
   </body>
 </html>
