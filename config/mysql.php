@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL);
+error_reporting(-1);
 $tables['news'] = "news";
 $tables['comments'] = "comments";
 
