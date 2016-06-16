@@ -4,8 +4,8 @@
 
 $conncomments = mysqli_query($conn, "SELECT * FROM comments WHERE news_id = ". $_GET["id"]);
 
-while($comment = mysqli_fetch_assoc($conncomments))
-        echo $comment["author", ];
+$comment = mysqli_fetch_assoc($conncomments);
+
  ?>
 <p>
   test
