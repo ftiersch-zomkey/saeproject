@@ -4,8 +4,8 @@ require_once("config/mysql.php");
 require_once("config/functions.php");
 
 
-$news_result = mysqli_query("SELECT * FROM news WHERE id = ." .$_GET['id'] .);
-mysqli_fetch_assoc($news_result);
+$news_result = mysqli_query("SELECT * FROM news";
+// mysqli_fetch_assoc($news_result);
 
 ?>
 
