@@ -4,7 +4,7 @@
 
 $conncomments = mysqli_query($conn, "SELECT * FROM comments");
 
-while($comment = mysqli_fetch_assoc($conncomments))
+while($comment = mysqli_fetch_assoc($conn,comments))
         echo $comment["author"];
  ?>
 <p>
