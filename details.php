@@ -6,7 +6,7 @@ require_once("config/functions.php");
 
 
 $news_result = mysqli_query("SELECT * FROM news WHERE id = ." .$_GET['id'] .);
-mysqli
+mysqli_fetch_assoc($news_result);
 
 ?>
 
@@ -33,6 +33,10 @@ mysqli
     </div>
 
     <div class="side_container">
+
+    </div>
+
+    <div class="comments">
 
     </div>
 
