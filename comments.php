@@ -25,7 +25,7 @@ while($comment = mysqli_fetch_assoc($conncomments))
 
 <style media="screen">
   #Kommentar {
-    background-color: grey;
+    background-color: lightgrey;
     margin-top: 10px;
     height: 200px;
     width: 500px;
