@@ -1,7 +1,7 @@
-<php 
+<php
 
-echo "das ist die Detail Seite"
-
+echo "das ist die Detail Seite";
+echo "test";
 
 
 ?>
