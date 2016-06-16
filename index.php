@@ -17,32 +17,32 @@ mysqli_close($conn);
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>News :)</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>News :)</title>
+  <link rel="stylesheet" href="/css/master.css" charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
     <?php
-        if($news){
-        foreach($news as $entry){
-          $html = $news_entry_sk;
+    if($news){
+      foreach($news as $entry){
+        $html = $news_entry_sk;
 
-          // REPLACE PLACEHOLDER
-          foreach($entry as $key => $value){
-            $html = str_replace("{".$key."}", $value, $html);
-          }
-
-          // PREVIEW IS SPECIAL
-          $preview = $entry['content'];
-          if(strlen($preview) > $previewLength){$preview = substr($preview, 0, $previewLength-3)."...";}
-          $html = str_replace("{preview}", $preview, $html);
-
-          // Echo out
-          echo $html;
+        // REPLACE PLACEHOLDER
+        foreach($entry as $key => $value){
+          $html = str_replace("{".$key."}", $value, $html);
         }
-      }else{
-        echo "<h2>No News!<h2>";
+
+        // PREVIEW IS SPECIAL
+        $preview = $entry['content'];
+        if(strlen($preview) > $previewLength){$preview = substr($preview, 0, $previewLength-3)."...";}
+        $html = str_replace("{preview}", $preview, $html);
+
+        // Echo out
+        echo $html;
       }
+<<<<<<< HEAD
      ?>
 
 
@@ -50,4 +50,13 @@ mysqli_close($conn);
        <a href="details.php">Details</a>
        <!-- Kann später dann wieder raus -->
   </body>
+=======
+    }else{
+      echo "<h2>No News!<h2>";
+    }
+    ?>
+
+  </div>
+</body>
+>>>>>>> origin/master
 </html>
