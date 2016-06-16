@@ -31,6 +31,9 @@ print_r($test);
 
     <div class="main_content">
       <h2><?php echo $test['title']; ?></h2>
+      <p>
+        <?php echo $test['content']; ?>
+      </p>
     </div>
 
     <div class="side_container">

@@ -17,6 +17,10 @@ nav a {
     float: left;
       }
 
+.main_content h2 {
+  margin-left: 100px;
+}
+
 .side_container {
     width: 200px;
     height: 800px;
