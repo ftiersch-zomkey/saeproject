@@ -28,7 +28,7 @@ body{
   border-radius: 2px;
   transition: all ease-in .2s;
   background-color: rgb(226, 226, 226);
-  margin-right:5px;
+  margin-right:10px;
 }
 
 .pagination li:hover{
@@ -36,10 +36,10 @@ body{
 }
 
 .pagination .active{
-  background-color: rgb(158, 158, 158);
+  background-color: rgb(226, 226, 226);
 }
 
 .pagination li a{
   text-decoration:none;
-  color: white;
+  color:orange;
 }
