@@ -1,0 +1,10 @@
+body{
+  backgound-color: rgb(215, 215, 215);
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 20px auto 0 auto;
+  background-color: white;
+  border: 1px rgb(164, 164, 164) solid;
+}
