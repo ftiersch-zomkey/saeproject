@@ -31,6 +31,12 @@ mysqli_close($conn);
 
         // REPLACE PLACEHOLDER
         foreach($entry as $key => $value){
+          // CHANGE TYPE OF DATE
+          if($key == "published"){
+            $date = new DateTime($value);
+            $value = $date->format('H:i d.m.Y');
+          }
+          // REPLACE PLACEHOLDER :)
           $html = str_replace("{".$key."}", $value, $html);
         }
 
