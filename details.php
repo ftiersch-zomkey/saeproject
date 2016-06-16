@@ -4,7 +4,7 @@ require_once("config/mysql.php");
 require_once("config/functions.php");
 
 
-$news_result = mysqli_query("SELECT * FROM news";
+$news_result = mysqli_query($conn, "SELECT * FROM news");
 // mysqli_fetch_assoc($news_result);
 
 ?>
