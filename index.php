@@ -57,7 +57,7 @@ mysqli_close($conn);
     <?php
       foreach($pagination as $ppage){
         $active = ($page == $ppage) ? "active" : "";
-        echo "<li class="$active"><a href=\"index.php?p=$ppage\">$ppage</a></li>";
+        echo "<li class="$active"><a href=\"index.php/$ppage\">$ppage</a></li>";
       }
      ?>
    </ul>
