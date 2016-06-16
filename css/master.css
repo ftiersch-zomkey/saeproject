@@ -8,9 +8,10 @@ body{
   background-color: rgba(120,120,120,.3);
   border: 1px rgb(164, 164, 164) solid;
   padding: 15px 20px;
-  transition:padding 0.4s ease-in-out;
+  transition:all 0.4s ease-in-out;
 }
 
 .wrapper::hover{
   padding:20px;
+  font-size:1.3em;
 }
