@@ -5,7 +5,9 @@ require_once("config/functions.php");
 
 
 $news_result = mysqli_query($conn, "SELECT * FROM news");
-mysqli_fetch_assoc($news_result);
+$test = mysqli_fetch_assoc($news_result);
+
+print_r($test);
 
 ?>
 

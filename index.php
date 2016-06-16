@@ -52,7 +52,7 @@ mysqli_close($conn);
       echo "<h2>No News!<h2>";
     }
     ?>
-
+    
     <ul>
     <?php
       foreach($pagination as $page){
