@@ -31,7 +31,15 @@ nav a {
   margin-top: 50px;
 }
 
-.main_content p text {
+.main_content p.text {
   margin-left: 80px;
   margin-right: 80px;
+}
+
+.main_content p.author {
+  
+}
+
+.main_content p.timestamp {
+
 }
