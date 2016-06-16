@@ -54,12 +54,14 @@ mysqli_close($conn);
     ?>
 
     <ul class="pagination">
-    <?php
-      foreach($pagination as $ppage){
-        $active = ($page == $ppage) ? "active" : "";
-        echo "<li class=\"$active\"><a href=\"/$ppage\">$ppage</a></li>";
+      <?php
+      if(count($pagination) > 1){
+        foreach($pagination as $ppage){
+          $active = ($page == $ppage) ? "active" : "";
+          echo "<li class=\"$active\"><a href=\"/$ppage\">$ppage</a></li>";
+        }
       }
-     ?>
-   </ul>
+      ?>
+    </ul>
   </body>
-</html>
+  </html>
