@@ -2,7 +2,7 @@
 
 function niceTitle($title){
   $title = strtolower($title);
-  $title = (iconv("UTF-8", "ASCII//TRANSLIT", $title));
+  $title = str_replace(['ä','ü','ö'], ['ae','ue','oe'], $title);
   $title = preg_replace('/[^A-Za-z0-9\_\-]/',"_", $title);
   return $title;
 }
