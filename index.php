@@ -42,7 +42,7 @@ mysqli_close($conn);
         // PUBLISHED_GERMAN
         $date = new DateTime($entry['published']);
         $published = $date->format('H:i d.m.Y');
-        $html = str_replace("{published}", $published, $html);
+        $html = str_replace("{published_german}", $published, $html);
 
         //NICE_TITLE
         $nice_title = niceTitle($entry['title']);
