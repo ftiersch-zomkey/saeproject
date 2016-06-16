@@ -52,8 +52,8 @@ mysqli_close($conn);
       echo "<h2>No News!<h2>";
     }
     ?>
-    
-    <ul>
+
+    <ul class="pagination">
     <?php
       foreach($pagination as $page){
         echo "<li><a href=\"index.php?p=$page\">$page</a></li>";
