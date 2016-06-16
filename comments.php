@@ -8,8 +8,4 @@ while($comment = mysqli_fetch_assoc($conncomments))
         echo $comment["id"];
  ?>
 
-<p>
-  test
-</p>
-
 </div> <!-- kommentar_formular -->
