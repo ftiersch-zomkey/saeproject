@@ -1,8 +1,6 @@
 <style media="screen">
 
 footer {
-  background-color: white;
-  height: 100px:
   text-align: center;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -16,8 +14,8 @@ footer a {
 }
 
 footer button {
-  display:inline-block;
-  text-align:center;
+  display: inline-block;
+  text-align: center;
   border-radius: 5px;
   transition: all ease-in .2s;
   background-color: rgb(226, 226, 226);
