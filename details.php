@@ -37,7 +37,25 @@ $output = mysqli_fetch_assoc($news_result);
     </div>
 
     <div class="comments">
-      <?php include("comments.php"); ?>
+      <?php
+      $conncomments = mysqli_query($conn, "SELECT * FROM comments WHERE news_id = ". $_GET["id"]);
+      ?>
+      <form class="kommentare" action="details.php" method="post">
+        <div class=label1>Kommentar Ersetllen</div></br>
+        <input class="inputtext" type="text" name="comment">
+        <input class="commentbutton" type="submit" name="commentsend" value="Comment">
+      </form>
+
+      <?php while($comment = mysqli_fetch_assoc($conncomments)){ ?>
+
+      <div id="Kommentar">
+        <p class="name"><?php echo $comment["author"]; ?></p>
+        <p class="date"><?php echo $comment["added"]; ?></p>
+        <div id=clear></div>
+        <p class="Kommentarclass"><?php echo $comment['content']; ?></p>
+      </div>
+      <?php } ?>
+      
     </div>
 
   </body>
