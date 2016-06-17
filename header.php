@@ -10,7 +10,9 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: orange;
+  padding: 10px;
+  display: inline-block;
 }
 
 nav button {

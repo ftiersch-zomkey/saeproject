@@ -10,7 +10,9 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: orange;
+  padding: 10px;
+  display: inline-block;
 }
 
 footer button {
