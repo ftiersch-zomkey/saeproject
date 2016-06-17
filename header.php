@@ -16,7 +16,7 @@ nav a {
 }
 
 header button .active {
-  background-color: rgb(158, 158, 158) !important;
+  background-color: red !important;
 }
 
 nav button {

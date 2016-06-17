@@ -2,6 +2,7 @@
 require_once("header.php");
 require_once("config/mysql.php");
 require_once("config/functions.php");
+require_once("index.php");
 
 
 $news_result = mysqli_query($conn, "SELECT * FROM news WHERE id=" .$_GET['id']);
