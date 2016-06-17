@@ -1,9 +1,8 @@
 <style media="screen">
-nav {
-  margin-top: 50px;
-}
 
 nav {
+  background-color: white;
+  height: 100px:
   text-align: center;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -11,10 +10,15 @@ nav {
   color: black;
 }
 
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
 nav button {
   display:inline-block;
   text-align:center;
-  border-radius: 3px;
+  border-radius: 5px;
   transition: all ease-in .2s;
   background-color: rgb(226, 226, 226);
   margin-right: 100px;
