@@ -55,9 +55,8 @@ $output = mysqli_fetch_assoc($news_result);
         <p class="Kommentarclass"><?php echo $comment['content']; ?></p>
       </div>
       <?php } ?>
-      
-    </div>
 
+    </div>
   </body>
 </html>
 
