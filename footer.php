@@ -15,10 +15,6 @@ footer a {
   display: inline-block;
 }
 
-footer button a .active {
-  background-color: rgb(158, 158, 158) !important;
-}
-
 footer button {
   display: inline-block;
   text-align: center;
