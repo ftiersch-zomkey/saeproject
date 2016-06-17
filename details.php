@@ -6,6 +6,9 @@ require_once("config/functions.php");
 $news_result = mysqli_query($conn, "SELECT * FROM news WHERE id=" .$_GET['id']);
 $output = mysqli_fetch_assoc($news_result);
 
+
+$conncomments = mysqli_query($conn, "SELECT * FROM comments WHERE news_id = ". $_GET["id"]);
+
 ?>
 
 
@@ -36,9 +39,6 @@ $output = mysqli_fetch_assoc($news_result);
     </div>
 
     <div class="comments">
-      <?php
-      $conncomments = mysqli_query($conn, "SELECT * FROM comments WHERE news_id = ". $_GET["id"]);
-      ?>
       <form class="kommentare" action="details.php" method="post">
         <div class=label1>Kommentar Ersetllen</div></br>
         <input class="inputtext" type="text" name="comment">
