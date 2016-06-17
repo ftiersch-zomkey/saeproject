@@ -1,4 +1,5 @@
 <style media="screen">
+
 footer {
   margin-top: 100px;
 }
