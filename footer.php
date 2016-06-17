@@ -20,7 +20,7 @@ footer button {
   text-align: center;
   border-radius: 5px;
   transition: all ease-in .2s;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(158, 158, 158);
   margin-right: 100px;
 }
 </style>
