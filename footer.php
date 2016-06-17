@@ -15,7 +15,7 @@ footer a {
   display: inline-block;
 }
 
-footer a .active {
+footer button a .active {
   background-color: rgb(158, 158, 158) !important;
 }
 

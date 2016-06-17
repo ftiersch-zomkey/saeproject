@@ -15,7 +15,7 @@ nav a {
   display: inline-block;
 }
 
-header a .active {
+header button a .active {
   background-color: rgb(158, 158, 158) !important;
 }
 
